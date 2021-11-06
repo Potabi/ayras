@@ -1,15 +1,18 @@
-Lumina
-======
-This is the official source tree for the Lumina Desktop Environment.
+Ayras Desktop
+=============
+This is the official source tree for the Ayras desktop environment. A fork of the Lumina desktop environment specifically designed for the needs of the Potabi Systems project. As development continues, Lumina and Ayras would be completely seperate. Ayras will be working on an ImGui-based reimplementation (https://github.com/ocornut/imgui) that may release in Potabi Systems 2.0 Fenn.
 
-For additional information about the project, please browse the official website for documentation, screenshots, and more: 
+Please browse this website for documentation: 
 https://lumina-desktop.org/
 
-**Community Chat Channels:**
- - Telegram: ["Lumina Desktop" public channel](https://t.me/luminadesktop)
- - "Lumina Desktop" public channel on Matrix @ #lumina-desktop:matrix.org
+For download and installation instructions, screenshots, and more (documentation coming soon):
+https://ayras.potabi.com/
 
-**Lumina Project Info: Table of Contents**
+**Community Chat Channels:**
+- Github Discussions: https://github.com/Potabi/ayras/discussions
+- Discord: https://discord.com/invite/8s8nNwndtF
+
+**Ayras README.md: Table of Contents**
 
 - [Description](#description)
 - [Operating Systems and Distributions](#osdistros)
@@ -23,28 +26,16 @@ https://lumina-desktop.org/
 Description <a name="description"></a>
 =====
 
-The Lumina Desktop Environment is a lightweight system interface that is designed for use on any Unix-like operating system. It takes a plugin-based approach, allowing the entire interface to be assembled/arranged by each individual user as desired, with a system-wide default layout which can be setup by the system administrator. This allows every system (or user session) to be designed to maximize the individual user's productivity.
+Ayras is a lightweight desktop envionment for any Unix-like operating systems. Ayras is a fork of the Lumina desktop environment, which has a plugin-based approach - allowing users to rearrange and reassemble the desktop environment to taste. Ayras is a fork which aims to support Potabi, and later aiming to replace all of Lumina's original Qt code with the ImGui graphical toolkit, in order to fully remove any and all GPL and other copyleft licensed-software.
 
 ![](https://github.com/lumina-desktop/lumina-themes/blob/master/artwork/screenshots/Screenshot-2021-10-02-15-55-58.png)
 Operating Systems and Distributions <a name="osdistros"></a>
 ----
-Supported operating systems include (but are not limited to):
+Being a fork of Lumina, Ayras has unofficial support for many operating systems, including ones that may have it pre-installed. Aryas is only officially supported for the CoreNGS and Potabi Systems platforms, as they are why Ayras is designed and built.
+
+Unofficially supported operating systems include (but are not limited to):
  * BSD: TrueOS, FreeBSD, OpenBSD, NetBSD, DragonflyBSD, GNU/kFreeBSD
  * Linux: Void, Gentoo, Debian, "Generic" Linux (including Arch, Ubuntu, and more)
-
-Known OS distributions that provide the Lumina desktop out-of-box:
-
- * [Project Trident (Void Linux)](https://project-trident.org)
- 
-Some operating systems package the Lumina desktop under the name `lumina` and some use `lumina-desktop`. 
-
-Operating system repos with a `lumina` package
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/lumina.svg)](https://repology.org/project/lumina/versions)
-
-Operating system repos with a `lumina-desktop` package
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/lumina-desktop.svg)](https://repology.org/project/lumina-desktop/versions)
 
 Latest Versions <a name="latestversions"></a>
 ----
@@ -57,6 +48,9 @@ Occasionally there may be patches committed for particular versions which are no
 
 Translations <a name="translations"></a>
 ----
+With Ayras being based on Lumina, it should be mostly functional with localization files. This is not confirmed, and as development continues, may break non-english translations. If you wish to help translations, join the discord listed above.
+
+### For Lumina:
 **Legacy Versions (1.0.0 and older)**
 
 All the translation files for Lumina are available through the trueos/lumina-i18n repository (Qt5+ only). Please follow the directions in that repository for installing localization files.
@@ -69,7 +63,7 @@ To submit translations, please edit those i18n/*.ts translation files and submit
 
 How to file bug reports or feature requests <a name="filebugs"></a>
 ----
-Please create a ticket through the [GitHub issues tracker](https://github.com/lumina-desktop/lumina/issues) on this repository. Similarly, if you want to send in patches or other source contributions, please send in a GitHub pull request so that it can get reviewed/committed as quickly as possible.
+Please create a ticket through the [GitHub issues tracker](https://github.com/potabi/ayras/issues) on this repository. Similarly, if you want to send in patches or other source contributions, please send in a GitHub pull request so that it can get reviewed/committed as quickly as possible.
 
 
 How to build from source <a name="buildfromsource"></a>
@@ -77,7 +71,7 @@ How to build from source <a name="buildfromsource"></a>
 1) Checkout the source repo to your local box (GitHub gives a few methods for this)
 
 Examples:
-* To checkout the master branch of the repo, run `git clone https://github.com/lumina-desktop/lumina` to create a "lumina" directory with a local copy of the source tree.
+* To checkout the master branch of the repo, run `git clone https://github.com/potabi/ayras` to create an "ayras" directory with a local copy of the source tree.
 * To update an exising checkout of the Lumina repo, run "git pull" while within your local copy of the source tree. 
 
 2) In a terminal, change to the lumina repo directory (base dir, not one of the sub-projects)
