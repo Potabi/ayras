@@ -13,6 +13,6 @@ LIBS     += -lpam
 SOURCES += main.c
 
 perms.path = $$DESTDIR$${PREFIX}/sbin
-perms.extra = "cp /work/stage/$$DESTDIR$${PREFIX}/sbin/lumina-checkpass $$DESTDIR$${PREFIX}/sbin/lumina-checkpass | chmod 4555 $$DESTDIR$${PREFIX}/sbin/lumina-checkpass"
+perms.extra = "chmod 4555 $$DESTDIR$${PREFIX}/sbin/lumina-checkpass"
 
 INSTALLS += target perms
